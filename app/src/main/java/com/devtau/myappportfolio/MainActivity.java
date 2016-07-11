@@ -69,6 +69,6 @@ public class MainActivity extends AppCompatActivity implements View.OnClickListe
             Locale locale = res.getConfiguration().locale;
             msg = String.format(locale, res.getString(R.string.msg_formatter), msg);
         }
-        Toast.makeText(getApplicationContext(), msg, Toast.LENGTH_SHORT).show();
+        Toast.makeText(this, msg, Toast.LENGTH_SHORT).show();
     }
 }
